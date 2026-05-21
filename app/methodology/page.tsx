@@ -225,7 +225,18 @@ export default async function MethodologyPage() {
       </Section>
 
         <footer className="flex flex-col gap-2 border-t border-ink-disabled pt-6 text-[12px] text-ink-tertiary">
-          <div>v0.1 · last updated 2026-05-20</div>
+          <div>v0.1 · last updated 2026-05-21</div>
+          <div>
+            Source code:{" "}
+            <a
+              href="https://github.com/vpjonny/agentfi-terminal"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="hover:text-signal"
+            >
+              github.com/vpjonny/agentfi-terminal ↗
+            </a>
+          </div>
         </footer>
       </article>
     </div>

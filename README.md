@@ -1,5 +1,12 @@
 # agentfi.terminal
 
+[![CI](https://github.com/vpjonny/agentfi-terminal/actions/workflows/ci.yml/badge.svg)](https://github.com/vpjonny/agentfi-terminal/actions/workflows/ci.yml)
+[![License: PolyForm NC 1.0.0](https://img.shields.io/badge/license-PolyForm%20NC%201.0.0-C6FF3F)](./LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org)
+[![React](https://img.shields.io/badge/React-19-58A6FF)](https://react.dev)
+[![Tailwind](https://img.shields.io/badge/Tailwind-v4-38BDF8)](https://tailwindcss.com)
+[![Tests](https://img.shields.io/badge/tests-181%20unit%20%2B%2047%20e2e-6FCF97)](#testing-strategy)
+
 Compute-valuation terminal for autonomous on-chain agents on Base. Launch agent: **AUTONO** (Liquid Protocol).
 
 Built as a publishing engine first, a product second — every component renders both on-page and as a 1200×630 social-share card.

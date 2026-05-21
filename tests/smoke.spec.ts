@@ -411,11 +411,12 @@ test.describe("agentfi.terminal · smoke", () => {
     await expect(allChip).toHaveAttribute("aria-pressed", "true");
   });
 
-  test("/ — footer has links to status / rss / api", async ({ page }) => {
+  test("/ — footer has links to status / rss / api / github", async ({ page }) => {
     await page.goto("/");
     const footer = page.locator("footer");
     await expect(footer.locator('a[href="/status"]')).toBeVisible();
     await expect(footer.locator('a[href="/feed.xml"]')).toBeVisible();
     await expect(footer.locator('a[href="/api/agents"]')).toBeVisible();
+    await expect(footer.locator('a[href*="github.com/vpjonny/agentfi-terminal"]')).toBeVisible();
   });
 });

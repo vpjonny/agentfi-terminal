@@ -41,6 +41,15 @@ export function Footer({
             api
           </Link>
           <span aria-hidden>·</span>
+          <a
+            href="https://github.com/vpjonny/agentfi-terminal"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="hover:text-ink-secondary transition-colors"
+          >
+            github ↗
+          </a>
+          <span aria-hidden>·</span>
           <Link href="/privacy" className="hover:text-ink-secondary transition-colors">
             privacy
           </Link>
