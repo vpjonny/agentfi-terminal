@@ -97,7 +97,7 @@ export default async function MethodologyPage() {
         <header className="flex flex-col gap-4">
           <div className="flex items-baseline gap-3">
             <div className="label-micro">methodology</div>
-            <span className="font-mono text-[11px] text-ink-tertiary">// v0.1</span>
+            <span className="font-mono text-[11px] text-ink-tertiary">{"// v0.1"}</span>
           </div>
           <h1 className="font-serif text-[48px] leading-tight tracking-tight text-ink-primary">
             How we value autonomous agents

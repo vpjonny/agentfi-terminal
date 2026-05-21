@@ -6,7 +6,7 @@ import { BuildModeCountdown } from "@/components/BuildModeCountdown";
 import { ActionsFeed } from "@/components/ActionsFeed";
 import { HistoryChart } from "@/components/HistoryChart";
 import { getAgent, listAgents } from "@/lib/agents";
-import { getSnapshot, MOCK_NOW_ISO } from "@/lib/mock-data";
+import { getSnapshot } from "@/lib/mock-data";
 import { buildMode } from "@/lib/build-mode";
 import { getHistory } from "@/lib/db/snapshots-store";
 import { getConstitutionSnippet } from "@/lib/chain/constitution";

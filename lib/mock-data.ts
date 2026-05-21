@@ -154,7 +154,6 @@ async function resolveSlug(slug: string): Promise<AgentSnapshot | undefined> {
         return live;
       }
     } catch (err) {
-      // eslint-disable-next-line no-console
       console.warn(`[${slug}] live fetch failed, falling back to mock:`, err);
     }
   }

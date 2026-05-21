@@ -46,7 +46,6 @@ export async function getDiemPrice(): Promise<DiemPrice> {
     cache = { price, source: "live", expiresAt: now + CACHE_TTL_MS };
     return { price, source: "live" };
   } catch (err) {
-    // eslint-disable-next-line no-console
     console.warn("[diem-price] fetch failed, using fallback:", err);
     // Cache the fallback briefly too so we don't hammer Gecko while it's down
     cache = { price: DIEM_PRICE_USD, source: "fallback", expiresAt: now + 60_000 };

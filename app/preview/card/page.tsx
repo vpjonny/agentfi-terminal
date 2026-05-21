@@ -9,8 +9,6 @@ export const metadata = {
   title: "preview · agent card · agentfi.terminal",
 };
 
-const NOW_ISO = "2026-05-18T17:42:08Z";
-
 const mockActions: ActionEvent[] = [
   {
     type: "CLAIM",

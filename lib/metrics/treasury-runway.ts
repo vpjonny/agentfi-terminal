@@ -7,7 +7,7 @@ export interface TreasuryRunwayInput {
 }
 
 export function treasuryRunway(input: TreasuryRunwayInput): MetricResult {
-  const { treasuryUsd, monthlyBurnUsd, mcapUsd } = input;
+  const { treasuryUsd, mcapUsd } = input;
 
   const multiple = treasuryUsd > 0 ? mcapUsd / treasuryUsd : 0;
 
