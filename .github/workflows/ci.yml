@@ -17,10 +17,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
-    # Pin determinism for visual byte-snapshots. Mirrors playwright.config.ts.
     env:
-      PIN_CONSTITUTION_SNIPPET: "Accumulate compute until 0.5 DIEM/day; then build."
       NEXT_PUBLIC_GIT_SHA: ${{ github.sha }}
+      # Note: PIN_CONSTITUTION_SNIPPET is set per-step inside Playwright's
+      # webServer config (playwright.config.ts → webServer.env). Setting it
+      # job-wide here would leak into vitest and break the constitution unit
+      # tests that mock the fetch.
 
     steps:
       - uses: actions/checkout@v4
